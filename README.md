@@ -8,6 +8,12 @@ Maven 3.6.1
 MySQL 5.7  
 Tomcat 9.0.16  
 
+## Pull Project & compile  
+Get the source code from github.  
+
+```cd TargetReatil```   
+```mvn clean package```   
+
 ## Install MySQL and Update it
 
 Download and install mysql from the below mentioned link :  
@@ -32,7 +38,5 @@ Update below database configuration -> TargetRetail/src/main/resources/applicati
 ```spring.datasource.url=jdbc:mysql://localhost:3306/retail
 spring.datasource.username=mkyong
 spring.datasource.password=password```
-
-
 
 
