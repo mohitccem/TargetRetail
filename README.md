@@ -33,10 +33,8 @@ Create a database and use it
 
 ## Configure MySQL, 
 
-Update below database configuration -> TargetRetail/src/main/resources/application.properties  
+Update below database configuration -> TargetRetail/src/main/resources/application.properties    
     
-```spring.datasource.url=jdbc:mysql://localhost:3306/retail
-spring.datasource.username=mkyong
-spring.datasource.password=password```
-
-
+spring.datasource.username=mkyong  
+spring.datasource.password=password  
+spring.datasource.url=jdbc:mysql://localhost:3306/retail  
