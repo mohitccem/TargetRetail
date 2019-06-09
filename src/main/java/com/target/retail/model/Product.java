@@ -1,17 +1,11 @@
 package com.target.retail.model;
 
-//import org.springframework.data.cassandra.core.mapping.Column;
-//import org.springframework.data.cassandra.core.mapping.PrimaryKey;
-//import org.springframework.data.cassandra.core.mapping.Table;
-
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Column;
 import java.util.Objects;
 
-//??implements Serializable
 @Entity
 @Table(name = "Product")
 public class Product {
@@ -86,45 +80,4 @@ public class Product {
 				'}';
 	}
 
-		/*@Override
-	    public boolean equals(Object o) {
-
-	        if (o == this) return true;
-	        if (!(o instanceof Product)) {
-	            return false;
-	        }
-	        Product price = (Product) o;
-
-	        return new EqualsBuilder()
-	        		.append(productId, price.productId)
-	                .append(price, price.price)
-	                .append(currency_code, price.currency_code)
-	                .isEquals();
-	    }*/
-
-	    /*@Override
-	    public int hashCode() {
-	        return new HashCodeBuilder()
-	        		.append(productId)
-	                .append(price)
-	                .append(currency_code)
-	                .toHashCode();
-
-	    }*/
-
-
-		/*@Override
-	    public String toString() {
-	        StringBuilder builder = new StringBuilder();
-	        builder.append("productId=");
-	        builder.append(productId);
-	        builder.append("name=");
-	        builder.append(", price=");
-	        builder.append(price);
-	        builder.append(", currency=");
-	        builder.append(currency_code);
-	       
-	        return builder.toString();
-	    }*/
-	    
 }
