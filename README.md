@@ -25,17 +25,13 @@ Create a database and use it
 
 ```INSERT INTO product(id, price, currency_code) VALUES (13860416);```  
 
-## Configure MySQL, Path TargetRetail/src/main/resources/application.properties  
+## Configure MySQL, 
+
+Update below database configuration -> TargetRetail/src/main/resources/application.properties  
     
 ```spring.datasource.url=jdbc:mysql://localhost:3306/retail
 spring.datasource.username=mkyong
-spring.datasource.password=password
-
-hibernate_sequence' doesn't exist
-spring.jpa.hibernate.use-new-id-generator-mappings=false
-
-# drop n create table, good for testing, comment this in production
-spring.jpa.hibernate.ddl-auto=create```
+spring.datasource.password=password```
 
 
 
