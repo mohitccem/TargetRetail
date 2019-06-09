@@ -31,10 +31,61 @@ Create a database and use it
 
 ```INSERT INTO product(id, price, currency_code) VALUES (13860416);```  
 
-## Configure MySQL, 
+## Configure MySQL  
 
 Update below database configuration -> TargetRetail/src/main/resources/application.properties    
     
 spring.datasource.username=mkyong  
 spring.datasource.password=password  
 spring.datasource.url=jdbc:mysql://localhost:3306/retail  
+
+## Starting the application
+
+Run the jar inside target folder  
+
+```java -jar TargetRetail/target/myretail-0.0.1-SNAPSHOT.jar```
+
+## Calling the REST-API's
+
+1.  API to retrieve product name and price details using product id  
+
+```GET http://localhost:8080/retail/products/13860416```  
+
+### Response Body :-  
+```json
+{
+  "id": 13860416,
+  "name": "Progressive Power Yoga: Sedona Experie (DVD)",
+  "productPrice": {
+    "price": 72.8,
+    "currencyCode": "USD"
+  }
+}
+```  
+2. API to update price of a product.  
+
+```PUT http://localhost:8080/retail/products/13860416```   
+
+### Request Body:-
+```json
+{
+  "id": 13860416,
+  "name": "Progressive Power Yoga: Sedona Experie (DVD)",
+  "productPrice": {
+    "price": 72.99,
+    "currencyCode": "USD"
+  }
+}
+```
+
+### Response :-  
+```json
+{
+  "id": 13860416,
+  "name": "Progressive Power Yoga: Sedona Experie (DVD)",
+  "productPrice": {
+    "price": 72.8,
+    "currencyCode": "USD"
+  }
+}
+```
