@@ -9,6 +9,4 @@ public interface ProductService {
 
     ProductDTO updatePrice(Product prod);
 
-    ProductDTO createProduct(Product product);
-
 }
