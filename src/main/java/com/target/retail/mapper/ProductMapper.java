@@ -10,7 +10,7 @@ import com.target.retail.model.Product;
 public class ProductMapper {
 
     public ProductDTO mapToDto(Product product) {
-        
+
         ProductDTO productDTO = null;
 
         if (product != null) {
