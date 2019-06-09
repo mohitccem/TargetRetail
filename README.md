@@ -89,3 +89,10 @@ Run the jar inside target folder
   }
 }
 ```
+## Additional Scope
+
+1. Application can be made more secure by adding Authentication/Authorization mechanisms across services.
+2. Add thread pool to handle concurrrent requests.
+3. Validation of inputs like product id, price etc.
+4. Cache the product name from redsky.target.com to avoid latency.
+5. Dockerize the app .
