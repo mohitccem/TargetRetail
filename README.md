@@ -43,7 +43,7 @@ spring.datasource.url=jdbc:mysql://localhost:3306/retail
 
 Run the jar inside target folder  
 
-```java -jar TargetRetail/target/myretail-0.0.1-SNAPSHOT.jar```
+```java -jar TargetRetail/target/retail-1.0-FINAL.jar```
 
 ## Calling the REST-API's
 
