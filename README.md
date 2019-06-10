@@ -35,7 +35,7 @@ Create a database and use it
 
 Update below database configuration -> TargetRetail/src/main/resources/application.properties    
     
-spring.datasource.username=mkyong  
+spring.datasource.username=mysql  
 spring.datasource.password=password  
 spring.datasource.url=jdbc:mysql://localhost:3306/retail  
 
@@ -95,4 +95,5 @@ Run the jar inside target folder
 2. Add thread pool to handle concurrrent requests.
 3. Validation of inputs like product id, price etc.
 4. Cache the product name from redsky.target.com to avoid latency.
-5. Dockerize the app .
+5. Dockerize the app.
+6. Unit testing
