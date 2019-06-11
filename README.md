@@ -17,7 +17,7 @@ Get the source code from github.
 ## Install MySQL and Update it
 
 Download and install mysql from the below mentioned link :  
-```https://dev.mysql.com/doc/refman/8.0/en/installing.html```
+```https://www.mysql.com/downloads/```
 
 Login into mysql database  
 ```mysql -u [username] -p;```
