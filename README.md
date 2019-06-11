@@ -23,13 +23,13 @@ Login into mysql database
 ```mysql -u [username] -p;```
 
 Create a database and use it   
-```CREATE DATABASE [IF NOT EXISTS] retail;```
+```CREATE DATABASE if not exists retail;```
 
 ```USE retail;```  
 
 ```CREATE TABLE product (id INT, price DOUBLE, currency_code VARCHAR(20), PRIMARY KEY(id));```  
 
-```INSERT INTO product(id, price, currency_code) VALUES (13860416);```  
+```INSERT INTO product(id, price, currency_code) VALUES (13860416, 78.8, "USD");```  
 
 ## Configure MySQL  
 
